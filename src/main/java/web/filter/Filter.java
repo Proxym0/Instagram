@@ -1,4 +1,4 @@
-package web;
+package web.filter;
 
 import javax.servlet.FilterChain;
 import javax.servlet.ServletException;
