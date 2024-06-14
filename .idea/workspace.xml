@@ -9,24 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8ba8140-07a4-4f21-8ad5-88b3eeb9b687" name="Changes" comment="fix">
-      <change afterPath="$PROJECT_DIR$/src/TomcatMavenApp-2.0.war" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/datasource.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/JDBCUserDAOTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/instagram_db/public/comments.sql" beforeDir="false" afterPath="$PROJECT_DIR$/instagram_db/public/comments.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/instagram_db/public/likes.sql" beforeDir="false" afterPath="$PROJECT_DIR$/instagram_db/public/likes.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/instagram_db/public/posts.sql" beforeDir="false" afterPath="$PROJECT_DIR$/instagram_db/public/posts.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/instagram_db/public/users.sql" beforeDir="false" afterPath="$PROJECT_DIR$/instagram_db/public/users.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/impl/AbstractDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/impl/AbstractDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/validators/UserValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/validators/UserValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/web/listener/ApplicationListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/listener/ApplicationListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/web/servlet/RegistrationServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/servlet/RegistrationServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RegistrationServletParameterResolver.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RegistrationServletTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RegistrationServletTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="f8ba8140-07a4-4f21-8ad5-88b3eeb9b687" name="Changes" comment="fix3" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -282,7 +265,7 @@
       <workItem from="1717841801442" duration="2042000" />
       <workItem from="1717932340304" duration="741000" />
       <workItem from="1718265668099" duration="2647000" />
-      <workItem from="1718310656199" duration="4945000" />
+      <workItem from="1718310656199" duration="5346000" />
     </task>
     <task id="LOCAL-00001" summary="fix">
       <created>1717585874425</created>
@@ -291,7 +274,35 @@
       <option name="project" value="LOCAL" />
       <updated>1717585874425</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fix2">
+      <created>1718394276770</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1718394276770</updated>
+    </task>
+    <task id="LOCAL-00003" summary="fix3">
+      <created>1718394379757</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1718394379757</updated>
+    </task>
+    <task id="LOCAL-00004" summary="fix3">
+      <created>1718394527310</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1718394527310</updated>
+    </task>
+    <task id="LOCAL-00005" summary="fix3">
+      <created>1718394634439</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1718394634439</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -316,7 +327,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix" />
+    <MESSAGE value="fix2" />
+    <MESSAGE value="fix3" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
