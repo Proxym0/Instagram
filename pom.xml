@@ -81,9 +81,7 @@
             <version>RELEASE</version>
             <scope>compile</scope>
         </dependency>
-
     </dependencies>
-
     <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-war-plugin</artifactId>
@@ -92,6 +90,8 @@
             <failOnMissingWebXml>false</failOnMissingWebXml>
         </configuration>
     </plugin>
+
+
 
     <build>
         <finalName>Instagram</finalName>
