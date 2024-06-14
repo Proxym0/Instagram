@@ -5,9 +5,9 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public abstract class AbstractDAO {
-    public static final String URL = "jdbc:postgresql://localhost:5432/instagram_db";
-    public static final String USER = "postgres";
-    public static final String PASSWORD = "postgres";
+    public static final String URL = "datasource.url";
+    public static final String USER = "datasource.user";
+    public static final String PASSWORD = "datasource.password";
     private final Connection connection;
 
     public AbstractDAO() {

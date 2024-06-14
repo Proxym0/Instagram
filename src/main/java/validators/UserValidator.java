@@ -1,6 +1,7 @@
 package validators;
 
 import entity.User;
+import service.UserService;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,6 +11,7 @@ public class UserValidator {
     private static final String USERNAME = "^[A-Za-z][A-Za-z0-9_]{2,16}$";
     private static final String PASSWORD = "^(?=\\d*)(?=[a-z]*)(?=[A-Z]*)(?=[\\W]*).{2,16}$";
     private static final String EMAIL = "^[\\w-]{2,16}@([\\w-]{2,5}\\.)+[\\w-]{2,4}$";
+    private static UserValidator userValidator;
 
     public static boolean isValid(User user) {
         return
@@ -42,5 +44,11 @@ public class UserValidator {
             return false;
         }
         return true;
+    }
+    public static UserValidator getInstance() {
+        if (userValidator == null) {
+            userValidator = new UserValidator();
+        }
+        return userValidator;
     }
 }

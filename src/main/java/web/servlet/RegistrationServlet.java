@@ -27,12 +27,14 @@ public class RegistrationServlet extends HttpServlet {
     private static final String USER_ALREADY_EXISTS = "The user already exists!!!";
     private static final String REGISTRATION_FAILED = "Registration failed. Check the correctness of the entered data!";
     public UserService userService = UserService.getInstance();
-    private UserValidator userValidator;
+    public UserValidator userValidator= UserValidator.getInstance();
+
 
     public RegistrationServlet(UserService userService, UserValidator userValidator) {
         this.userService = userService;
         this.userValidator = userValidator;
     }
+
     @Override
     public void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         req.getRequestDispatcher(REG_PATH).forward(req, resp);
@@ -44,7 +46,7 @@ public class RegistrationServlet extends HttpServlet {
         String email = req.getParameter(EMAIL);
         String password = req.getParameter(PASSWORD);
         String avatar = req.getParameter(AVATAR);
-        UserDTO userDTO = UserDTO.builder()
+        User user = User.builder()
                 .setUsername(username)
                 .setPassword(password)
                 .setEmail(email)
@@ -53,10 +55,10 @@ public class RegistrationServlet extends HttpServlet {
                 .setUpdateAt(LocalDateTime.now())
                 .setAvatar(avatar)
                 .build();
-        User user = userService.toEntity(userDTO);
+//        User user = userService.toEntity(userDTO);
         Optional<User> byUsername = userService.findByUserName(username);
         if (byUsername.isEmpty() && UserValidator.isValid(user)) {
-            UserService.getInstance().createAccount(user);
+            userService.createAccount(user);
             resp.sendRedirect(AUTH_PATH);
             return;
         }
@@ -69,4 +71,11 @@ public class RegistrationServlet extends HttpServlet {
 
     }
 
+    public void setUserValidator(UserValidator userValidator) {
+        this.userValidator = userValidator;
+    }
+
+    public UserValidator getUserValidator() {
+        return userValidator;
+    }
 }
